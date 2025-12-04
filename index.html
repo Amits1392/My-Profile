@@ -1,0 +1,1513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amit Singh | Storage &amp; Backup Engineer - GithubWebApp</title>
+    <script type="importmap">{
+  "imports": {
+    "./js/site.js": "./js/site.xtxxf3hu2r.js",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.js": "./lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
+    "./lib/bootstrap/dist/js/bootstrap.bundle.min.js": "./lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
+    "./lib/bootstrap/dist/js/bootstrap.esm.min.js": "./lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
+    "./lib/bootstrap/dist/js/bootstrap.esm.js": "./lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
+    "./lib/bootstrap/dist/js/bootstrap.min.js": "./lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
+    "./lib/bootstrap/dist/js/bootstrap.js": "./lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js",
+    "./lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js": "./lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.47otxtyo56.js",
+    "./lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js": "./lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
+    "./lib/jquery-validation/dist/additional-methods.js": "./lib/jquery-validation/dist/additional-methods.83jwlth58m.js",
+    "./lib/jquery-validation/dist/additional-methods.min.js": "./lib/jquery-validation/dist/additional-methods.min.mrlpezrjn3.js",
+    "./lib/jquery-validation/dist/jquery.validate.js": "./lib/jquery-validation/dist/jquery.validate.lzl9nlhx6b.js",
+    "./lib/jquery-validation/dist/jquery.validate.min.js": "./lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js",
+    "./lib/jquery/dist/jquery.js": "./lib/jquery/dist/jquery.0i3buxo5is.js",
+    "./lib/jquery/dist/jquery.min.js": "./lib/jquery/dist/jquery.min.o1o13a6vjx.js",
+    "./lib/jquery/dist/jquery.slim.js": "./lib/jquery/dist/jquery.slim.2z0ns9nrw6.js",
+    "./lib/jquery/dist/jquery.slim.min.js": "./lib/jquery/dist/jquery.slim.min.muycvpuwrr.js"
+  }
+}</script>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css" />
+    <link rel="stylesheet" href="/css/site.b9sayid5wm.css" />
+    <link rel="stylesheet" href="/GithubWebApp.p2avwhays0.styles.css" />
+</head>
+<body>
+    <header b-kaz4ex817q>
+        <nav b-kaz4ex817q class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div b-kaz4ex817q class="container">
+                <a class="navbar-brand" href="/">GithubWebApp</a>
+                <button b-kaz4ex817q class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-kaz4ex817q class="navbar-toggler-icon"></span>
+                </button>
+                <div b-kaz4ex817q class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul b-kaz4ex817q class="navbar-nav flex-grow-1">
+                        <li b-kaz4ex817q class="nav-item">
+                            <a class="nav-link text-dark" href="/">Home</a>
+                        </li>
+                        <li b-kaz4ex817q class="nav-item">
+                            <a class="nav-link text-dark" href="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div b-kaz4ex817q class="container">
+        <main b-kaz4ex817q role="main" class="pb-3">
+            
+<!-----------------------------
+  GLOBAL STYLES
+------------------------------>
+<style>
+    :root {
+        --bg-dark: #020617;
+        --bg-dark-alt: #020818;
+        --bg-card: rgba(15, 23, 42, 0.96);
+        --bg-card-soft: rgba(15, 23, 42, 0.9);
+        --accent: #3b82f6;
+        --accent-soft: #60a5fa;
+        --accent-strong: #2563eb;
+        --accent-muted: rgba(37, 99, 235, 0.25);
+        --border-subtle: rgba(51, 65, 85, 0.9);
+        --text-main: #e5e7eb;
+        --text-muted: #9ca3af;
+        --text-softer: #6b7280;
+        --shadow-strong: 0 22px 55px rgba(0, 0, 0, 0.80);
+        --shadow-soft: 0 14px 36px rgba(15, 23, 42, 0.90);
+        --radius-lg: 22px;
+        --radius-xl: 30px;
+        --radius-pill: 999px;
+        --transition-fast: 150ms ease;
+        --transition-med: 220ms ease;
+        --max-width: 1200px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: radial-gradient(circle at top left, #0f172a 0%, #020617 45%, #000000 100%);
+        color: var(--text-main);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.6;
+    }
+
+    a {
+        color: var(--accent-soft);
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: #bfdbfe;
+        }
+
+    .page-root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-inner {
+        flex: 1;
+    }
+
+    .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 18px;
+    }
+
+    /* UTILITIES */
+
+    .flex {
+        display: flex;
+    }
+
+    .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mt-1 {
+        margin-top: 4px;
+    }
+
+    .mt-2 {
+        margin-top: 8px;
+    }
+
+    .mt-3 {
+        margin-top: 12px;
+    }
+
+    .mt-4 {
+        margin-top: 16px;
+    }
+
+    .mt-5 {
+        margin-top: 24px;
+    }
+
+    .mt-6 {
+        margin-top: 32px;
+    }
+
+    .mt-8 {
+        margin-top: 40px;
+    }
+
+    .mb-1 {
+        margin-bottom: 4px;
+    }
+
+    .mb-2 {
+        margin-bottom: 8px;
+    }
+
+    .mb-3 {
+        margin-bottom: 12px;
+    }
+
+    .mb-4 {
+        margin-bottom: 16px;
+    }
+
+    .mb-5 {
+        margin-bottom: 24px;
+    }
+
+    .mb-6 {
+        margin-bottom: 32px;
+    }
+
+    .text-muted {
+        color: var(--text-muted);
+    }
+
+    .text-soft {
+        color: var(--text-softer);
+    }
+
+    .text-accent {
+        color: var(--accent-soft);
+    }
+
+    .tag-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 3px 10px;
+        border-radius: var(--radius-pill);
+        border: 1px solid rgba(148, 163, 184, 0.7);
+        font-size: 11px;
+        color: var(--text-main);
+        gap: 4px;
+    }
+
+    .badge-soft {
+        padding: 2px 8px;
+        border-radius: var(--radius-pill);
+        background: rgba(37, 99, 235, 0.25);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        font-size: 11px;
+    }
+
+    .divider {
+        margin: 26px 0;
+        height: 1px;
+        background: linear-gradient(to right, transparent, rgba(51, 65, 85, 0.9), transparent);
+    }
+
+    /* BUTTONS */
+
+    .btn {
+        display: inline-flex;
+        padding: 10px 20px;
+        border-radius: var(--radius-pill);
+        border: 1px solid transparent;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        align-items: center;
+        gap: 8px;
+        transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+    }
+
+    .btn-primary {
+        background: linear-gradient(135deg, var(--accent-soft), var(--accent-strong));
+        color: white;
+        box-shadow: 0 12px 32px rgba(37, 99, 235, 0.55);
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 42px rgba(37, 99, 235, 0.85);
+            background: linear-gradient(135deg, #60a5fa, #1d4ed8);
+        }
+
+    .btn-ghost {
+        background: rgba(15, 23, 42, 0.8);
+        border-color: rgba(148, 163, 184, 0.8);
+        color: var(--text-main);
+    }
+
+        .btn-ghost:hover {
+            background: rgba(30, 41, 59, 0.95);
+            transform: translateY(-2px);
+            border-color: #e5e7eb;
+        }
+
+    .btn-sm {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    /* HEADER / NAV */
+
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        backdrop-filter: blur(16px);
+        background: linear-gradient(to bottom, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.75), transparent);
+        border-bottom: 1px solid rgba(30, 64, 175, 0.35);
+    }
+
+    .nav-inner {
+        height: 64px;
+    }
+
+    .brand-mark {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .brand-logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 14px;
+        background: radial-gradient(circle at 30% 20%, #60a5fa, #1d4ed8, #020617);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: #e5e7eb;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.9);
+    }
+
+    .brand-text-main {
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    .brand-text-sub {
+        font-size: 11px;
+        color: var(--text-muted);
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 18px;
+        font-size: 13px;
+    }
+
+    .nav-link {
+        cursor: pointer;
+        color: var(--text-muted);
+        padding: 6px 0;
+        position: relative;
+        transition: color var(--transition-fast);
+    }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #60a5fa, #22c55e);
+            transition: width var(--transition-med);
+        }
+
+        .nav-link:hover {
+            color: var(--text-main);
+        }
+
+            .nav-link:hover::after {
+                width: 100%;
+            }
+
+    /* HERO */
+
+    .hero {
+        padding: 46px 0 40px;
+    }
+
+    .hero-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.05fr);
+        gap: 26px;
+        align-items: center;
+    }
+
+    .hero-eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 10px;
+    }
+
+    .hero-title {
+        font-size: clamp(34px, 4vw, 46px);
+        font-weight: 800;
+        letter-spacing: 0.03em;
+    }
+
+        .hero-title span {
+            background: linear-gradient(135deg, #93c5fd, #22c55e);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+    .hero-subtitle {
+        margin-top: 8px;
+        font-size: 17px;
+        color: #c7d2fe;
+    }
+
+    .hero-body {
+        margin-top: 14px;
+        font-size: 14px;
+        color: var(--text-main);
+        max-width: 600px;
+    }
+
+    .hero-meta {
+        margin-top: 18px;
+        font-size: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: var(--text-muted);
+    }
+
+        .hero-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+    .hero-cta {
+        margin-top: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* PROFILE SIDE CARD */
+
+    .profile-shell {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 340px;
+        background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.45), rgba(15, 23, 42, 0.98));
+        border-radius: var(--radius-xl);
+        padding: 22px 20px 20px;
+        border: 1px solid rgba(148, 163, 184, 0.55);
+        box-shadow: var(--shadow-strong);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            inset: -40%;
+            opacity: 0.15;
+            background: radial-gradient(circle at 10% 0, rgba(96, 165, 250, 0.9), transparent 50%), radial-gradient(circle at 110% 20%, rgba(45, 212, 191, 0.7), transparent 55%);
+            pointer-events: none;
+        }
+
+    .profile-inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    .profile-avatar-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile-avatar {
+        width: 118px;
+        height: 118px;
+        border-radius: 50%;
+        border: 3px solid #e0f2fe;
+        box-shadow: 0 16px 32px rgba(15, 23, 42, 0.95);
+        overflow: hidden;
+        background: radial-gradient(circle at 30% 20%, #60a5fa, #1d4ed8, #020617);
+    }
+
+        .profile-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+    .profile-name {
+        margin-top: 12px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .profile-role {
+        text-align: center;
+        color: #c7d2fe;
+        font-size: 13px;
+    }
+
+    .profile-tags {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .profile-links {
+        margin-top: 12px;
+        font-size: 12px;
+        color: #e5e7eb;
+    }
+
+    .profile-links-row {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-bottom: 4px;
+        word-break: break-all;
+    }
+
+    .profile-links-label {
+        color: #bfdbfe;
+        min-width: 56px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+    }
+
+    .profile-meta {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        font-size: 11px;
+        color: #cbd5f5;
+    }
+
+    /* SECTIONS */
+
+    .sections {
+        padding: 16px 0 40px;
+    }
+
+    .section {
+        margin-bottom: 32px;
+    }
+
+    .section-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    .section-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .section-kicker {
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+    }
+
+    .section-body {
+        background: var(--bg-card);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border-subtle);
+        padding: 18px 18px;
+        box-shadow: var(--shadow-soft);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .section-body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.15), transparent 60%);
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+    .section-body-inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* GRID LAYOUTS */
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+        gap: 18px;
+    }
+
+    .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .grid-2-balanced {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    /* ABOUT TEXT */
+
+    .about-paragraph {
+        font-size: 14px;
+        color: var(--text-main);
+        margin-bottom: 10px;
+    }
+
+    .quote-block {
+        margin-top: 12px;
+        padding: 12px 14px;
+        border-left: 3px solid var(--accent-soft);
+        border-radius: 0 14px 14px 0;
+        background: rgba(15, 23, 42, 0.95);
+        font-size: 13px;
+        color: #d1fae5;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.7);
+    }
+
+    /* TIMELINE */
+
+    .timeline {
+        position: relative;
+        margin-top: 2px;
+        padding-left: 18px;
+    }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 4px;
+            bottom: 4px;
+            width: 2px;
+            background: linear-gradient(to bottom, #60a5fa, rgba(15, 23, 42, 0.4));
+        }
+
+    .timeline-entry {
+        position: relative;
+        padding-left: 14px;
+        margin-bottom: 16px;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: -1px;
+        top: 4px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #60a5fa;
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.4);
+    }
+
+    .timeline-title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .timeline-meta {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-bottom: 4px;
+    }
+
+    .timeline-list {
+        padding-left: 16px;
+        margin: 6px 0 0;
+    }
+
+        .timeline-list li {
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+    /* SKILLS MATRIX */
+
+    .skill-group {
+        margin-bottom: 14px;
+    }
+
+    .skill-group-title {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--text-muted);
+        margin-bottom: 6px;
+    }
+
+    .skill-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .skill-chip {
+        padding: 5px 10px;
+        border-radius: var(--radius-pill);
+        border: 1px solid rgba(75, 85, 99, 0.95);
+        background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.28), rgba(15, 23, 42, 0.98));
+        font-size: 12px;
+        color: var(--text-main);
+        white-space: nowrap;
+    }
+
+    .skill-level-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-bottom: 4px;
+    }
+
+    .skill-meter {
+        position: relative;
+        height: 5px;
+        border-radius: 999px;
+        background: rgba(30, 64, 175, 0.35);
+        overflow: hidden;
+    }
+
+    .skill-meter-fill {
+        position: absolute;
+        inset: 0;
+        width: 80%;
+        background: linear-gradient(90deg, #22c55e, #60a5fa);
+    }
+
+    /* PROJECT CARDS */
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .project-card {
+        border-radius: 16px;
+        padding: 14px;
+        background: rgba(15, 23, 42, 0.96);
+        border: 1px solid rgba(55, 65, 81, 0.9);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.7);
+        transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+    }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.2), rgba(15, 23, 42, 0.98));
+            border-color: #60a5fa;
+            box-shadow: 0 14px 36px rgba(15, 23, 42, 0.95);
+        }
+
+    .project-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    .project-meta {
+        font-size: 11px;
+        color: var(--text-muted);
+        margin-bottom: 6px;
+    }
+
+    .project-body {
+        font-size: 13px;
+        color: var(--text-main);
+        margin-bottom: 6px;
+    }
+
+    /* CERTS & HIGHLIGHTS */
+
+    .cert-item {
+        margin-bottom: 8px;
+        font-size: 13px;
+    }
+
+    .cert-name {
+        font-weight: 600;
+    }
+
+    .cert-org {
+        color: var(--text-muted);
+        font-size: 12px;
+    }
+
+    .cert-link {
+        font-size: 12px;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .contact-list {
+        font-size: 14px;
+    }
+
+    .contact-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+    }
+
+    .contact-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--text-muted);
+        min-width: 70px;
+    }
+
+    .contact-form {
+        display: grid;
+        gap: 8px;
+    }
+
+    .form-control {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid rgba(55, 65, 81, 0.9);
+        background: rgba(15, 23, 42, 0.98);
+        color: var(--text-main);
+        padding: 8px 10px;
+        font-size: 13px;
+        outline: none;
+        transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+    }
+
+        .form-control:focus {
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 1px rgba(96, 165, 250, 0.7);
+            background: #020617;
+        }
+
+    textarea.form-control {
+        resize: vertical;
+        min-height: 90px;
+    }
+
+    .form-note {
+        font-size: 11px;
+        color: var(--text-muted);
+    }
+
+    /* FOOTER */
+
+    .site-footer {
+        border-top: 1px solid rgba(31, 41, 55, 0.9);
+        padding: 16px 0 22px;
+        font-size: 12px;
+        color: var(--text-softer);
+    }
+
+    .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+        .footer-links a {
+            color: var(--text-muted);
+        }
+
+            .footer-links a:hover {
+                color: var(--accent-soft);
+            }
+
+    /* RESPONSIVE */
+
+    media (max-width: 960px) {
+        .hero-inner {
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        .profile-shell {
+            justify-content: flex-start;
+        }
+
+        .grid-2,
+        .grid-2-balanced,
+        .contact-grid {
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        .project-grid {
+            grid-template-columns: minmax(0, 1fr);
+        }
+    }
+
+    media (max-width: 640px) {
+        .nav-links {
+            display: none;
+        }
+
+        .hero {
+            padding-top: 32px;
+        }
+
+        .section-body {
+            padding: 14px 14px;
+        }
+    }
+</style>
+
+<div class="page-root">
+    <header class="site-header">
+        <div class="container nav-inner flex-between">
+            <div class="brand-mark">
+                <div class="brand-logo">AS</div>
+                <div>
+                    <div class="brand-text-main">AMIT SINGH</div>
+                    <div class="brand-text-sub">Storage &amp; Backup Engineer</div>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <div class="nav-link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</div>
+                <div class="nav-link" onclick="document.getElementById('experience').scrollIntoView({behavior:'smooth'})">Experience</div>
+                <div class="nav-link" onclick="document.getElementById('skills').scrollIntoView({behavior:'smooth'})">Skills</div>
+                <div class="nav-link" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Projects</div>
+                <div class="nav-link" onclick="document.getElementById('certs').scrollIntoView({behavior:'smooth'})">Certifications</div>
+                <div class="nav-link" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-inner">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div>
+                    <div class="hero-eyebrow">Storage • Backup • Cloud Data Services</div>
+                    <h1 class="hero-title">
+                        Helping enterprises keep data <span>available, protected, and recoverable</span>.
+                    </h1>
+                    <p class="hero-subtitle">
+                        NetApp ONTAP | Cloud Volumes ONTAP | Azure NetApp Files | Veeam | Rubrik | Commvault | Ansible | Azure DevOps
+                    </p>
+
+                    <p class="hero-body">
+                        I’m <strong>Amit Singh</strong>, a Storage &amp; Backup Engineer with more than six years of experience
+                        managing mission-critical storage environments, disaster recovery setups, and backup platforms
+                        across on-premises and cloud. I specialize in NetApp technologies, Azure storage services,
+                        and automation to reduce risk and operational effort.
+                    </p>
+
+                    <div class="hero-meta">
+                        <span>📍 <span>India</span></span>
+                        <span>💼 <span>6+ years in enterprise storage &amp; data protection</span></span>
+                        <span>☁ <span>Hybrid (On-prem &amp; Azure)</span></span>
+                    </div>
+
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" onclick="document.getElementById('experience').scrollIntoView({behavior:'smooth'})">
+                            View Experience
+                        </button>
+                        <button class="btn btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                            Contact Me
+                        </button>
+                    </div>
+                </div>
+
+                <!-- PROFILE CARD -->
+                <div class="profile-shell">
+                    <aside class="profile-card">
+                        <div class="profile-inner">
+                            <div class="profile-avatar-wrapper">
+                                <div class="profile-avatar">
+                                    <!-- Place your photo as /wwwroot/images/amit-profile.jpg -->
+                                    <img src="/images/amit-profile.jpg" alt="Amit Singh" />
+                                </div>
+                            </div>
+
+                            <div class="profile-name">Amit Singh</div>
+                            <div class="profile-role">Storage &amp; Backup Administrator</div>
+
+                            <div class="profile-tags">
+                                <span class="badge-soft">NetApp ONTAP</span>
+                                <span class="badge-soft">Azure NetApp Files</span>
+                                <span class="badge-soft">Cloud Volumes ONTAP</span>
+                                <span class="badge-soft">Veeam · Rubrik · Commvault</span>
+                            </div>
+
+                            <div class="profile-links mt-3">
+                                <div class="profile-links-row">
+                                    <span class="profile-links-label">Email</span>
+                                    <a href="mailto:amit.singh1392@gmail.com">amit.singh1392@gmail.com</a>
+                                </div>
+                                <div class="profile-links-row">
+                                    <span class="profile-links-label">LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/amit-kumar-singh-a240761b0/" target="_blank">
+                                        linkedin.com/in/amit-kumar-singh-a240761b0
+                                    </a>
+                                </div>
+                                <div class="profile-links-row">
+                                    <span class="profile-links-label">Credly</span>
+                                    <a href="https://www.credly.com/users/amit-kumar-singh.9c2cdadd/badges#credly" target="_blank">
+                                        View my badges
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="profile-meta mt-3">
+                                <span class="tag-pill">⭐ Customer-focused operations</span>
+                                <span class="tag-pill">⚙ Automation-driven mindset</span>
+                                <span class="tag-pill">📚 Continuous learner</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <div class="sections">
+            <div class="container">
+                <!-- ABOUT -->
+                <section id="about" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="section-kicker">Biography</div>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-body-inner grid-2">
+                            <div>
+                                <p class="about-paragraph">
+                                    I am a storage and data protection specialist with deep hands-on experience in
+                                    <strong>NetApp ONTAP (7-Mode &amp; Clustered)</strong>, <strong>Cloud Volumes ONTAP (CVO)</strong>,
+                                    and <strong>Azure NetApp Files (ANF)</strong>. My day-to-day work focuses on
+                                    designing, implementing, and supporting storage solutions that keep business-critical
+                                    workloads running reliably.
+                                </p>
+                                <p class="about-paragraph">
+                                    Over the years I’ve supported enterprise environments in organizations such as
+                                    <strong>Accenture</strong>, <strong>IBM / Kyndryl</strong>, and
+                                    <strong>Bharat Electronics Limited (BEL)</strong>. I’ve worked across SAN and NAS
+                                    ecosystems, implemented <strong>SnapMirror</strong>-based disaster recovery,
+                                    optimized storage consumption, and participated in lifecycle upgrades of controllers,
+                                    shelves, and firmware.
+                                </p>
+                                <p class="about-paragraph">
+                                    Beyond day-to-day operations, I enjoy creating labs, writing documentation and
+                                    knowledge articles, and building automation using <strong>Ansible</strong> and
+                                    <strong>Azure DevOps pipelines</strong>. My goal is to reduce manual effort,
+                                    prevent incidents, and give teams predictable, well-documented workflows.
+                                </p>
+                            </div>
+
+                            <div>
+                                <div class="quote-block">
+                                    “My approach is simple: understand the workload, design the right protection,
+                                    automate wherever possible, and keep the environment <strong>
+                                        transparent,
+                                        observable, and recoverable
+                                    </strong>.”
+                                </div>
+                                <p class="about-paragraph mt-3">
+                                    I am comfortable collaborating with application, backup, network, and cloud teams,
+                                    translating storage concepts into clear plans: from share and LUN provisioning to
+                                    <strong>RPO/RTO</strong> discussions and DR runbooks. I’ve also helped colleagues
+                                    and juniors prepare for storage and backup interviews, sharing practical scenarios
+                                    from real incidents and migrations.
+                                </p>
+                                <p class="about-paragraph">
+                                    Outside of work, I like exploring new tools, keeping up with technology trends,
+                                    and learning about health and productivity. I believe a calm mind and structured
+                                    thinking are as important as technical skills.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+
+                <!-- EXPERIENCE -->
+                <section id="experience" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">Professional Experience</h2>
+                        <div class="section-kicker">Career Journey</div>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-body-inner grid-2">
+                            <div>
+                                <div class="timeline">
+                                    <!-- Accenture -->
+                                    <article class="timeline-entry">
+                                        <div class="timeline-dot"></div>
+                                        <h3 class="timeline-title">Storage &amp; Backup Administrator</h3>
+                                        <div class="timeline-meta">
+                                            Accenture · Enterprise Storage &amp; Data Protection
+                                        </div>
+                                        <ul class="timeline-list">
+                                            <li>Administer NetApp ONTAP and Cloud Volumes ONTAP systems, managing aggregates, volumes, LUNs, and qtrees.</li>
+                                            <li>Design and maintain <strong>SnapMirror</strong> and <strong>SnapVault</strong> relationships for DR and long-term retention across multiple data centers and cloud.</li>
+                                            <li>Plan and execute ONTAP upgrades, SP and disk firmware updates, and post-upgrade validation with minimal downtime.</li>
+                                            <li>Collaborate with backup teams using <strong>Veeam</strong>, <strong>Rubrik</strong>, and <strong>Commvault</strong> to ensure consistent protection of VMs, databases, and file servers.</li>
+                                            <li>Automate recurring tasks and deployments using <strong>Ansible</strong> and <strong>Azure DevOps pipelines</strong>, improving consistency and reducing manual errors.</li>
+                                            <li>Perform regular system health checks, capacity and performance analysis, and proactive tuning for latency and throughput issues.</li>
+                                        </ul>
+                                    </article>
+
+                                    <!-- IBM / Kyndryl -->
+                                    <article class="timeline-entry">
+                                        <div class="timeline-dot"></div>
+                                        <h3 class="timeline-title">Storage Administrator</h3>
+                                        <div class="timeline-meta">
+                                            IBM / Kyndryl · Multi-vendor SAN/NAS
+                                        </div>
+                                        <ul class="timeline-list">
+                                            <li>Handled SAN &amp; NAS storage across <strong>NetApp, EMC, IBM, and HP</strong> platforms, supporting mixed enterprise workloads.</li>
+                                            <li>Configured and maintained <strong>FC SAN zoning</strong>, host mapping, and LUN masking to ensure secure and correct connectivity.</li>
+                                            <li>Supported NDMP and tape-based backup environments and coordinated with backup teams for restore and DR testing.</li>
+                                            <li>Participated in data migrations and storage refresh projects, following change management processes and maintenance windows.</li>
+                                            <li>Provided day-to-day operational support including incident resolution, problem analysis, and capacity planning.</li>
+                                        </ul>
+                                    </article>
+
+                                    <!-- BEL -->
+                                    <article class="timeline-entry">
+                                        <div class="timeline-dot"></div>
+                                        <h3 class="timeline-title">Storage Engineer</h3>
+                                        <div class="timeline-meta">
+                                            Bharat Electronics Limited (BEL)
+                                        </div>
+                                        <ul class="timeline-list">
+                                            <li>Supported storage infrastructure for internal applications and engineering workloads.</li>
+                                            <li>Assisted in deployment, monitoring, and troubleshooting of storage arrays and backup jobs.</li>
+                                            <li>Learned core processes around change management, documentation, and compliance.</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="skill-group">
+                                    <div class="skill-group-title">Focus Areas in the Role</div>
+                                    <ul class="timeline-list">
+                                        <li><strong>Storage Provisioning &amp; Governance</strong> – designing volumes, shares, export policies, and access models that align with security and application requirements.</li>
+                                        <li><strong>Data Protection &amp; DR</strong> – implementing RPO/RTO-aligned snapshot and replication schedules, DR runbooks, and test failovers.</li>
+                                        <li><strong>Lifecycle &amp; Upgrades</strong> – planning and executing upgrades, validations, and remediation plans to keep platforms supported and secure.</li>
+                                        <li><strong>Automation</strong> – using Ansible and scripts to standardize builds, snapshot policies, and replication configurations.</li>
+                                        <li><strong>Collaboration</strong> – working with Windows, Linux, DB, virtualization, and network teams to troubleshoot cross-stack issues.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="skill-group mt-4">
+                                    <div class="skill-group-title">Working Style</div>
+                                    <p class="about-paragraph">
+                                        I am detail-oriented and prefer structured documentation—runbooks, checklists, and
+                                        diagrams—so that complex tasks like migrations and DR failovers are repeatable.
+                                        I enjoy mentoring and knowledge sharing and have prepared detailed notes and question
+                                        banks for storage and data protection interviews.
+                                    </p>
+                                    <p class="about-paragraph">
+                                        When incidents happen, I stay calm, communicate clearly, and focus on restoration
+                                        first, followed by root cause analysis and preventive actions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+
+                <!-- SKILLS -->
+                <section id="skills" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">Skills &amp; Technologies</h2>
+                        <div class="section-kicker">Technical Profile</div>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-body-inner grid-2-balanced">
+                            <div>
+                                <div class="skill-group">
+                                    <div class="skill-group-title">Storage &amp; Data Services</div>
+                                    <div class="skill-chips">
+                                        <span class="skill-chip">NetApp ONTAP (7-Mode &amp; C-DOT)</span>
+                                        <span class="skill-chip">Cloud Volumes ONTAP (CVO)</span>
+                                        <span class="skill-chip">Azure NetApp Files (ANF)</span>
+                                        <span class="skill-chip">Aggregates · Volumes · LUNs</span>
+                                        <span class="skill-chip">NFSv3 / NFSv4.1</span>
+                                        <span class="skill-chip">CIFS / SMB Shares</span>
+                                        <span class="skill-chip">iSCSI &amp; FC SAN</span>
+                                        <span class="skill-chip">SnapMirror (XDP, DP)</span>
+                                        <span class="skill-chip">SnapVault · SnapRestore</span>
+                                        <span class="skill-chip">NDMP Backups</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-group">
+                                    <div class="skill-group-title">Backup &amp; Recovery</div>
+                                    <div class="skill-chips">
+                                        <span class="skill-chip">Veeam Backup &amp; Replication</span>
+                                        <span class="skill-chip">Rubrik</span>
+                                        <span class="skill-chip">Commvault</span>
+                                        <span class="skill-chip">VM &amp; Application Protection</span>
+                                        <span class="skill-chip">DR Orchestration</span>
+                                        <span class="skill-chip">RPO / RTO Planning</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-group">
+                                    <div class="skill-group-title">Cloud &amp; Automation</div>
+                                    <div class="skill-chips">
+                                        <span class="skill-chip">Microsoft Azure</span>
+                                        <span class="skill-chip">Azure DevOps Pipelines</span>
+                                        <span class="skill-chip">Ansible Automation</span>
+                                        <span class="skill-chip">REST APIs (NetApp &amp; Azure)</span>
+                                        <span class="skill-chip">Infrastructure as Code Concepts</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="skill-group">
+                                    <div class="skill-group-title">Platforms &amp; Networking</div>
+                                    <div class="skill-chips">
+                                        <span class="skill-chip">Linux (RHEL)</span>
+                                        <span class="skill-chip">Windows Server</span>
+                                        <span class="skill-chip">VMware Integration</span>
+                                        <span class="skill-chip">Hyper-V (exposure)</span>
+                                        <span class="skill-chip">TCP/IP · DNS</span>
+                                        <span class="skill-chip">LDAP · Active Directory</span>
+                                        <span class="skill-chip">Kerberos Authentication</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-group mt-4">
+                                    <div class="skill-group-title">Depth &amp; Strength</div>
+                                    <div class="skill-level-row">
+                                        <span>NetApp ONTAP &amp; CVO</span>
+                                        <span>Advanced</span>
+                                    </div>
+                                    <div class="skill-meter">
+                                        <div class="skill-meter-fill" style="width: 90%;"></div>
+                                    </div>
+
+                                    <div class="skill-level-row mt-2">
+                                        <span>Azure &amp; ANF</span>
+                                        <span>Strong</span>
+                                    </div>
+                                    <div class="skill-meter">
+                                        <div class="skill-meter-fill" style="width: 80%;"></div>
+                                    </div>
+
+                                    <div class="skill-level-row mt-2">
+                                        <span>Backup Platforms</span>
+                                        <span>Strong</span>
+                                    </div>
+                                    <div class="skill-meter">
+                                        <div class="skill-meter-fill" style="width: 80%;"></div>
+                                    </div>
+
+                                    <div class="skill-level-row mt-2">
+                                        <span>Automation &amp; Scripting</span>
+                                        <span>Growing</span>
+                                    </div>
+                                    <div class="skill-meter">
+                                        <div class="skill-meter-fill" style="width: 70%;"></div>
+                                    </div>
+
+                                    <p class="about-paragraph mt-3">
+                                        My current focus is to deepen automation, especially around
+                                        <strong>pipeline-driven deployments</strong> for CVO and ANF, and
+                                        standardized protection patterns that can be applied across environments.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+
+                <!-- PROJECTS / HIGHLIGHTS -->
+                <section id="projects" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">Selected Work &amp; Initiatives</h2>
+                        <div class="section-kicker">Projects &amp; Contributions</div>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-body-inner">
+                            <p class="about-paragraph">
+                                Below are examples of work that reflect how I think about storage,
+                                data protection, and automation. Names and exact details are generalized
+                                to respect confidentiality.
+                            </p>
+
+                            <div class="project-grid mt-3">
+                                <!-- ANF + DR Project -->
+                                <article class="project-card">
+                                    <div class="project-title">Azure NetApp Files Deployment with DR Automation</div>
+                                    <div class="project-meta">Design · Implementation · Runbook</div>
+                                    <div class="project-body">
+                                        Designed and documented an end-to-end ANF deployment for application teams,
+                                        including capacity planning, vNet/subnet design, snapshot policies, and
+                                        cross-region replication strategy. Created Ansible-based templates to
+                                        standardize creation of volumes, export policies, and protection schedules.
+                                    </div>
+                                    <ul class="timeline-list">
+                                        <li>Reduced manual provisioning time from days to hours.</li>
+                                        <li>Delivered clear runbooks for failover/failback scenarios.</li>
+                                        <li>Improved visibility of RPO/RTO commitments for stakeholders.</li>
+                                    </ul>
+                                </article>
+
+                                <!-- CVO Lab Project -->
+                                <article class="project-card">
+                                    <div class="project-title">Cloud Volumes ONTAP Simulator Lab</div>
+                                    <div class="project-meta">Self-driven learning environment</div>
+                                    <div class="project-body">
+                                        Built a CVO simulator environment with Ansible playbooks and Azure DevOps
+                                        pipelines to re-create common deployment patterns quickly. Used this lab to
+                                        test SnapMirror policies, snapshot retention models, and volume provisioning
+                                        strategies before recommending them in production.
+                                    </div>
+                                    <ul class="timeline-list">
+                                        <li>Improved confidence in new configurations prior to go-live.</li>
+                                        <li>Enabled faster onboarding of new team members via hands-on practice.</li>
+                                    </ul>
+                                </article>
+
+                                <!-- NetApp Glossary -->
+                                <article class="project-card">
+                                    <div class="project-title">NetApp Storage Glossary &amp; Command Guide</div>
+                                    <div class="project-meta">Knowledge Sharing · Documentation</div>
+                                    <div class="project-body">
+                                        Created a comprehensive NetApp glossary with more than 500+ terms, examples,
+                                        and CLI commands—covering aggregates, snapshots, SnapMirror, quotas, volume
+                                        moves, and operational tasks. Used as a reference by colleagues and for
+                                        interview preparation.
+                                    </div>
+                                    <ul class="timeline-list">
+                                        <li>Helped standardize understanding of terminology across the team.</li>
+                                        <li>Served as a base for KT sessions and role transitions.</li>
+                                    </ul>
+                                </article>
+
+                                <!-- Operations Excellence -->
+                                <article class="project-card">
+                                    <div class="project-title">Operational Excellence &amp; Reporting</div>
+                                    <div class="project-meta">Continuous Improvement</div>
+                                    <div class="project-body">
+                                        Established regular health-check routines, capacity trend reporting, and
+                                        simple dashboards/logs for tracking replication status, snapshot usage,
+                                        and backup success rates. Documented common incident patterns and
+                                        troubleshooting flows for faster resolution.
+                                    </div>
+                                    <ul class="timeline-list">
+                                        <li>Improved visibility for leads and managers.</li>
+                                        <li>Reduced repeated incidents by documenting root causes and fixes.</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+
+                <!-- CERTIFICATIONS & INTERESTS -->
+                <section id="certs" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">Certifications &amp; Interests</h2>
+                        <div class="section-kicker">Credentials &amp; Growth</div>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-body-inner grid-2-balanced">
+                            <div>
+                                <h3 class="skill-group-title">Certifications</h3>
+                                <div class="cert-item">
+                                    <div class="cert-name">NetApp Certified Data Administrator – ONTAP (NS0-161)</div>
+                                    <div class="cert-org">NetApp</div>
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-name">Microsoft Certified: Azure Administrator Associate (AZ-104)</div>
+                                    <div class="cert-org">Microsoft</div>
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-name">Rubrik Certified Engineer (RCE)</div>
+                                    <div class="cert-org">Rubrik</div>
+                                </div>
+
+                                <p class="mt-3 cert-link">
+                                    All verified badges are available on Credly:&nbsp;
+                                    <a href="https://www.credly.com/users/amit-kumar-singh.9c2cdadd/badges#credly" target="_blank">
+                                        View my certifications on Credly
+                                    </a>.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 class="skill-group-title">Beyond Work</h3>
+                                <ul class="timeline-list">
+                                    <li>Helping peers prepare for storage, NetApp, and data protection interviews by sharing real-world scenarios.</li>
+                                    <li>Exploring new automation tools and approaches to make storage operations more predictable.</li>
+                                    <li>Keeping up with cloud and security best practices to ensure designs remain resilient.</li>
+                                    <li>Learning about fitness, health, and productivity to stay balanced in demanding environments.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+
+                <!-- CONTACT -->
+                <section id="contact" class="section">
+                    <div class="section-header">
+                        <h2 class="section-title">Contact</h2>
+                        <div class="section-kicker">Let’s Connect</div>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-body-inner contact-grid">
+                            <div>
+                                <p class="about-paragraph">
+                                    If you’d like to discuss storage architecture, data protection strategies,
+                                    automation ideas, or potential opportunities, feel free to reach out.
+                                </p>
+                                <div class="contact-list mt-3">
+                                    <div class="contact-row">
+                                        <div class="contact-label">Email</div>
+                                        <a href="mailto:amit.singh1392@gmail.com">amit.singh1392@gmail.com</a>
+                                    </div>
+                                    <div class="contact-row">
+                                        <div class="contact-label">LinkedIn</div>
+                                        <a href="https://www.linkedin.com/in/amit-kumar-singh-a240761b0/" target="_blank">
+                                            linkedin.com/in/amit-kumar-singh-a240761b0
+                                        </a>
+                                    </div>
+                                    <div class="contact-row">
+                                        <div class="contact-label">Credly</div>
+                                        <a href="https://www.credly.com/users/amit-kumar-singh.9c2cdadd/badges#credly" target="_blank">
+                                            View my badges
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Simple non-functional contact form (for future wiring) -->
+                            <div>
+                                <form class="contact-form" onsubmit="event.preventDefault(); alert('This demo form is for display only. Please contact me via email or LinkedIn.');">
+                                    <input class="form-control" type="text" name="name" placeholder="Your name" />
+                                    <input class="form-control" type="email" name="email" placeholder="Your email" />
+                                    <textarea class="form-control" name="message" placeholder="Your message"></textarea>
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                        Send Message (demo)
+                                    </button>
+                                    <div class="form-note">
+                                        This form is a visual element only. For real communication, please email me or message me on LinkedIn.
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                © 2025 Amit Singh · Storage &amp; Backup Engineer
+            </div>
+            <div class="footer-links">
+                <a href="mailto:amit.singh1392@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/amit-kumar-singh-a240761b0/" target="_blank">LinkedIn</a>
+                <a href="https://www.credly.com/users/amit-kumar-singh.9c2cdadd/badges#credly" target="_blank">Credly</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+        </main>
+    </div>
+
+    <footer b-kaz4ex817q class="border-top footer text-muted">
+        <div b-kaz4ex817q class="container">
+            &copy; 2025 - GithubWebApp - <a href="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="/lib/jquery/dist/jquery.min.o1o13a6vjx.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js"></script>
+    <script src="/js/site.xtxxf3hu2r.js"></script>
+
+    
+<script src="/_framework/aspnetcore-browser-refresh.js"></script></body>
+</html>
